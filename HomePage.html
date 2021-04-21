@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Vedant Workspace
+        </title>
+        <link rel="shortcut icon" href="images/workspace.png">
+        <style type="text/css">
+            marquee{
+                font-family: Bahnschrift SemiBold;
+            }
+            *   {
+                box-sizing: border-box;
+            }
+    
+            body {
+                margin: 0;
+            }
+            
+            .navbar {
+                overflow: hidden;
+                background-color: rgb(233, 233, 233);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .navbar a {
+                float: left;
+                font-size: 22px;
+                color: rgb(0, 0, 0);
+                font-family: Bahnschrift SemiBold;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .navbar p{
+                float: Center;
+                font-size: 30px;
+                color: white;
+                font-family: Bahnschrift SemiBold;
+                text-align: center;
+            }
+            
+            .dropdown {
+                float: left;
+                overflow: hidden;
+                font-family: Bahnschrift SemiBold;
+                font-size: 22px;
+            }
+            
+            .dropdown .dropbtn {
+                font-size: 30px;  
+                border: none;
+                outline: none;
+                color: rgb(0, 0, 0);
+                padding: 14px 16px;
+                background-color: inherit;
+                font: inherit;
+                margin: 0;
+            }
+            
+            .navbar a:hover, .dropdown:hover .dropbtn {
+                background-color: rgb(226, 226, 226);
+            }
+            
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                width: 100%;
+                left: 0;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            
+            .dropdown-content .header {
+                background: rgb(0, 0, 0);
+                padding: 6px;
+                font-size: 14px;
+                color: white;
+                text-align: center;
+                font-family: Bahnschrift SemiBold;
+            }
+            
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            h1,h2,h3,h5{
+                text-align: center;
+                font-family: Bahnschrift SemiBold;
+            }
+            
+            /* Create three equal columns that floats next to each other */
+            .column {
+                float: left;
+                width: 33.33%;
+                padding: 0px;
+                background-color: rgb(255, 255, 255);
+                height: 160px;
+            }
+            
+            .column a {
+                float: none;
+                color: rgb(0, 0, 0);
+                padding: 14px;
+                text-decoration: none;
+                display: block;
+                text-align: Center;
+            }
+            
+            .column a:hover {
+                background-color: rgb(179, 179, 179)
+            }
+            
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            h4{
+                color: rgb(0, 0, 0);
+                background-color: rgb(255, 255, 255);
+                padding: 10px 20px;
+                text-decoration: none;
+                text-align: center;
+            }
+            .card {
+                box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+                width: 300px;
+                height: 350px;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+                background: rgb(255, 255, 255);
+            }
+
+            .title {
+                color: rgb(0, 0, 0);
+                font-size: 18px;
+            }
+            a {
+                text-decoration: none;
+                font-size: 22px;
+                color: black;
+            }
+
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            div.ex1 {
+                outline: 4px solid  rgba(223, 223, 223, 0.356);
+                background-color: rgba(223, 223, 223, 0.356);
+            }  
+            body, html {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+            }
+
+            .bgimg {
+                background-image: url('/images/co.jpg');
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+                position: relative;
+                color: white;
+                font-family: "Courier New", Courier, monospace;
+                font-size: 25px;
+            }
+            .middle {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+
+            .time{
+                text-align: center;
+                font-size: 40px;
+                margin-top: 0px;
+            }
+
+            hr {
+                margin: auto;
+                width: 40%;
+            } 
+            hr.new1 {
+                border: 3px solid red;
+                width: 100%;
+            } 
+            .div1 {
+                background: grey;
+                margin-top: 200px;
+                margin-bottom: 20px;
+                height: 20px;
+            }
+
+            ::-webkit-scrollbar {
+                width: 10px;
+                height: 10px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: rgba(90, 90, 90);
+            }
+
+            ::-webkit-scrollbar-track {
+                background: rgba(0, 0, 0, 0.2);
+            }   
+
+    </style>
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <img src="images/workspace.png" alt="html" style="float:left; width:50px; height:50px;"></img>
+            <a href="HomePage.html">Home</a>
+            <a href="https://news.google.com/topstories?hl=en-IN&gl=IN&ceid=IN%3Aen" target="_blank">Google News</a>
+            <div class="dropdown">
+              <button class="dropbtn">Menu
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">  
+                <div class="row">
+                  <div class="column">
+                    <a href="#code1" style="font-size: 20px">Latest Technology and Trends</a>
+                    <a href="#code2" style="font-size: 20px">Play with Google Apps</a>
+                    <a href="#code3" style="font-size: 20px">Database Management: Access 2016</a>
+                  </div>
+                  <div class="column">
+                    <a href="c1" style="font-size: 20px">Rasing Queries</a>
+                    <a href="activity 0.1" style="font-size: 20px">Designing Form and Report</a>
+                    <a href="activity 1" style="font-size: 20px">Communication Technology</a> 
+                  </div>
+                  <div class="column">
+                    <a href="activity 2" style="font-size: 20px">Computer Malware</a>
+                    <a href="Chapter8home.html" target="_blank" style="font-size: 20px">Website Designing: Tables</a>
+                    <a href="Trobleshooting" style="font-size: 20px">Trobleshooting</a>
+                  </div>
+                </div>
+              </div>
+            </div> 
+        </div>
+        <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+        </script>
+        <marquee style="font-size:20px">Welcome to vedant workspace. Here you can get solution of question asked in the book TERABYTES. It is an computer text book for class 8th. Also you can get solution of code. You can also get google news ©</marquee>
+        
+        <div class="bgimg">
+            <div class="middle">
+              <h1>CONTENT IS COMING SOON</h1>
+              <hr>
+              <p class="time"id="demo"></p>
+
+                <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("May 1, 2021 0:0:0").getTime();
+
+                // Update the count down every 1 second
+                var x = setInterval(function() {
+
+                // Get today's date and time
+                var now = new Date().getTime();
+                    
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+                    
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                // Output the result in an element with id="demo"
+                document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+                    
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "Now There";
+                }
+                }, 1000);
+                </script>
+            </div>
+        </div>
+        <hr class="new1">
+        <div class="card" id="c2">
+            <img src="images/workspace.png" alt="Vedant" style="width:50px; width: 150px; height: 150px;">
+            <h1>Vedant Nichit</h1>
+            <p class="title">CEO & Founder Of</p>
+            <p>Vedant Workspace</p>
+            <div style="margin: 20px 12px;">
+                <a href="https://trello.com/" target="_blank"><i class="fa fa-trello"></i></a> 
+                <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>  
+                <a href="https://www.linkedin.com/learning/subscription/topics?src=go-pa&veh=sem_src.go-pa_c.LLS-C_APAC_All_IN_Search_Google-Brand_DR-PRS_Broad_LIL-HeadTerm-Alpha_All_English_Core-MKAG_pkw.linkedin%20learning_pmt.e_pcrid.481281616546_pdv.c_plc._trgid.kwd-310582843911_net.g_learning&trk=sem_src.go-pa_c.LLS-C_APAC_All_IN_Search_Google-Brand_DR-PRS_Broad_LIL-HeadTerm-Alpha_All_English_Core-MKAG_pkw.linkedin%20learning_pmt.e_pcrid.481281616546_pdv.c_plc._trgid.kwd-310582843911_net.g_learning&mcid=6626616148786065459&cname=&camid=9764329640&asid=102279866120&targetid=kwd-310582843911&crid=481281616546&placement=&dev=c&ends=1&gclid=Cj0KCQjwyN-DBhCDARIsAFOELTmbltejf40BEcQEgBuO4JdNh4gABP2bw4xHqYHDOeEsdqRgqBhn1A8aAruEEALw_wcB&gclsrc=aw.ds" target="_blank"><i class="fa fa-linkedin"></i></a>  
+                <a href="https://www.facebook.com/facebook" target="_blank"><i class="fa fa-facebook"></i></a> 
+            </div>
+        </div>
+        <div class="ex1">
+            <h4 style="font-family: monospace; background-color: rgba(223, 223, 223, 0.055)">Vedant Workspace is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.</h4>
+            <h4 style="font-family: monospace; background-color: rgba(223, 223, 223, 0.055)">All Rights Reserved.</h4>
+            <img src="images/workspace-ConvertImage.png" alt="vedant workshop" style="width:100px; height:100px;" class="center"></img>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Vedant Workspace
+        </title>
+        <link rel="shortcut icon" href="images/workspace.png">
+        <style type="text/css">
+            marquee{
+                font-family: Bahnschrift SemiBold;
+            }
+            *   {
+                box-sizing: border-box;
+            }
+    
+            body {
+                margin: 0;
+            }
+            
+            .navbar {
+                overflow: hidden;
+                background-color: rgb(233, 233, 233);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .navbar a {
+                float: left;
+                font-size: 22px;
+                color: rgb(0, 0, 0);
+                font-family: Bahnschrift SemiBold;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .navbar p{
+                float: Center;
+                font-size: 30px;
+                color: white;
+                font-family: Bahnschrift SemiBold;
+                text-align: center;
+            }
+            
+            .dropdown {
+                float: left;
+                overflow: hidden;
+                font-family: Bahnschrift SemiBold;
+                font-size: 20px;
+            }
+            
+            .dropdown .dropbtn {  
+                border: none;
+                outline: none;
+                color: rgb(0, 0, 0);
+                padding: 14px 16px;
+                background-color: inherit;
+                font: inherit;
+                margin: 0;
+            }
+            
+            .navbar a:hover, .dropdown:hover .dropbtn {
+                background-color: rgb(226, 226, 226);
+            }
+            
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                width: 100%;
+                left: 0;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            
+            .dropdown-content .header {
+                background: rgb(0, 0, 0);
+                padding: 6px;
+                font-size: 14px;
+                color: white;
+                text-align: center;
+                font-family: Bahnschrift SemiBold;
+            }
+            
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            h1,h2,h3,h5{
+                text-align: center;
+                font-family: Bahnschrift SemiBold;
+            }
+            
+            /* Create three equal columns that floats next to each other */
+            .column {
+                float: left;
+                width: 33.33%;
+                padding: 0px;
+                background-color: rgb(255, 255, 255);
+                height: 158px;
+            }
+            
+            .column a {
+                float: none;
+                color: rgb(0, 0, 0);
+                padding: 14px;
+                font-size: 20px;
+                text-decoration: none;
+                display: block;
+                text-align: Center;
+            }
+            
+            .column a:hover {
+                background-color: rgb(194, 194, 194);
+            }
+            
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            h4{
+                color: rgb(0, 0, 0);
+                background-color: rgb(255, 255, 255);
+                padding: 10px 20px;
+                text-decoration: none;
+                text-align: center;
+            }
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            div.ex1 {
+                outline: 4px solid  rgba(223, 223, 223, 0.356);
+                background-color: rgba(223, 223, 223, 0.356);
+            }  
+            .div1 {
+                background: grey;
+                margin-top: 200px;
+                margin-bottom: 20px;
+                height: 20px;
+            }
+
+            ::-webkit-scrollbar {
+                width: 10px;
+                height: 10px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: rgba(90, 90, 90);
+            }
+
+            ::-webkit-scrollbar-track {
+                background: rgba(0, 0, 0, 0.2);
+            }   
+    </style>
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <img src="images/workspace.png" alt="html" style="float:left; width:50px; height:50px;"></img>
+            <a href="HomePage.html">Home</a>
+            <a href="https://news.google.com/topstories?hl=en-IN&gl=IN&ceid=IN%3Aen" target="_blank">Google News</a>
+            <div class="dropdown">
+              <button class="dropbtn">Super Easy 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="column">
+                    <a href="#code1">Code 1</a>
+                    <a href="#code2">Code 2</a>
+                    <a href="#code3">Code 3</a>
+                  </div>
+                  <div class="column">
+                    <a href="#c1">Code 4</a>
+                    <a href="#activity 0.1">Code 5</a>
+                    <a href="#activity 1">Activity 1</a>
+                  </div>
+                  <div class="column">
+                    <a href="#activity 2">Activity 2</a>
+                    <a href="#c2">End</a>
+                  </div>
+                </div>
+              </div>
+            </div> 
+        </div>
+        <marquee>Welcome to vedant workspace. Here you can get solution of question asked in the book TERABYTES. It is an computer text book for class 8th. Also you can get solution of code. You can also get google news ©</marquee>
+        <hr>
+        <h2 id="code1">
+            Code: 1: Create Table
+        </h2>
+        <hr>
+        <!--   Code1   -->
+        <table>
+            <tr>
+                <th> Column 1 Header </th>
+                <th> Column 2 Header </th>
+                <th> Column 3 Header </th>
+            </tr>
+            <tr>
+                <td> Row 1_Cell 1 </td>
+                <td> Row 2_Cell 2 </td>
+                <td> Row 2_Cell 3 </td>
+            </tr>
+            <tr>
+                <td> Row 2_Cell 1 </td>
+                <td> Row 2_Cell 2 </td>
+                <td> Row 2_Cell 3 </td>
+            </tr>
+        </table>
+        <hr>
+
+        <h2 id="code2">
+            Code: 2
+        </h2>
+        <!--   Code2   -->
+        <table border = "3" cellpadding="20" cellspacing= "5">
+            <tr>
+                <th> Column 1 Header </th>
+                <th> Column 2 Header </th>
+                <th> Column 3 Header </th>
+            </tr>
+            <tr>
+                <td> Row 1_Cell 1 </td>
+                <td> Row 2_Cell 2 </td>
+                <td> Row 2_Cell 3 </td>
+            </tr>
+            <tr>
+                <td> Row 2_Cell 1 </td>
+                <td> Row 2_Cell 2 </td>
+                <td> Row 2_Cell 3 </td>
+            </tr>
+        </table>
+        <hr>
+        <h2 id="activity 1">A. Change the cellpadding value to 50 and draw the output table.</h2>
+        <h3>Code: <h3 color="rgb(255,0,0)">table border = "3" cellpadding ="50" cellspacing ="5"></h3></h3>
+        <hr>
+        <!--   Activity 1   -->
+        <table border = "3" cellpadding="50" cellspacing= "5">
+            <tr>
+                <th> Column 1 Header </th>
+                <th> Column 2 Header </th>
+                <th> Column 3 Header </th>
+            </tr>
+            <tr>
+                <td> Row 1_Cell 1 </td>
+                <td> Row 2_Cell 2 </td>
+                <td> Row 2_Cell 3 </td>
+            </tr>
+            <tr>
+                <td> Row 2_Cell 1 </td>
+                <td> Row 2_Cell 2 </td>
+                <td> Row 2_Cell 3 </td>
+            </tr>
+        </table>
+        <hr>
+
+        <h2 id="activity 1">B. Change the cellpadding to 20</h2>
+        <h3>Code: table border = "3" cellpadding ="20" cellspacing ="20"></h3>
+        <hr>
+        <!--   Activity 1   -->
+        <table border = "3" cellpadding="20" cellspacing= "20">
+            <tr>
+                <th> Column 1 Header </th>
+                <th> Column 2 Header </th>
+                <th> Column 3 Header </th>
+            </tr>
+            <tr>
+                <td> Row 1_Cell 1 </td>
+                <td> Row 2_Cell 2 </td>
+                <td> Row 2_Cell 3 </td>
+            </tr>
+            <tr>
+                <td> Row 2_Cell 1 </td>
+                <td> Row 2_Cell 2 </td>
+                <td> Row 2_Cell 3 </td>
+            </tr>
+        </table>
+        <hr>
+
+        <h2 id="code3">
+            Code: 3: Change the alignment of the table
+        </h2>
+        <!--   Code3   -->
+        <hr>    
+        <table border = "3" cellpadding="20" cellspacing= "5" align ="center">
+            <tr>
+                <th> Column 1 Header </th>
+                <th> Column 2 Header </th>
+                <th> Column 3 Header </th>
+            </tr>
+            <tr>
+                <td> Row 1_Cell 1 </td>
+                <td> Row 2_Cell 2 </td>
+                <td> Row 2_Cell 3 </td>
+            </tr>
+            <tr>
+                <td> Row 2_Cell 1 </td>
+                <td> Row 2_Cell 2 </td>
+                <td> Row 2_Cell 3 </td>
+            </tr>
+        </table>
+        <hr>
+        <h2 id="c1">Code: 4: Change the width of cell in a table</h2>
+        <hr>  
+        <table border = "3" cellpadding="20" cellspacing= "5" align ="center" width="300">
+            <tr>
+                <th> Column 1 Header </th>
+                <th> Column 2 Header </th>
+                <th> Column 3 Header </th>
+            </tr>
+            <tr>
+                <td> Row 1_Cell 1 </td>
+                <td> Row 2_Cell 2 </td>
+                <td> Row 2_Cell 3 </td>
+            </tr>
+            <tr>
+                <td> Row 2_Cell 1 </td>
+                <td> Row 2_Cell 2 </td>
+                <td> Row 2_Cell 3 </td>
+            </tr>
+        </table>
+        <hr>
+        <h2 id="activity 0.1">Code: 5: Change the height of cell in a table</h2>
+        <!--   Code5   -->
+        <hr>  
+        <table border = "3" cellpadding="20" cellspacing= "5" width="500" height = "200">
+            <tr>
+                <th> Column 1 Header </th>
+                <th> Column 2 Header </th>
+                <th> Column 3 Header </th>
+            </tr>
+            <tr>
+                <td> Row 1_Cell 1 </td>
+                <td> Row 2_Cell 2 </td>
+                <td> Row 2_Cell 3 </td>
+            </tr>
+            <tr>
+                <td> Row 2_Cell 1 </td>
+                <td> Row 2_Cell 2 </td>
+                <td> Row 2_Cell 3 </td>
+            </tr>
+        </table>
+        <hr>
+        <h2 id="activity 2">Activity 2</h2>
+        <h3>B. Add a table in the Activity Studio page. You can use the following code snippet:</h3>
+        <hr>
+        <font face="Lucida Calligraphy" size ="4" color ="#008080">
+            <dt>Activity Studio</dt>
+            <dd><p align="justify">Art and Craft</p></dd>
+            <table border= "1" cellpadding="15" cellspacing="5" align="center">
+                <tr>
+                    <th>Activity_Name</th>
+                    <th>Activity Coach</th>
+                    <th>Activity Time</th>
+                </tr>
+                <tr>
+                    <td>Drawing</td>
+                    <td>David</td>
+                    <td>9:00 am</td>
+                </tr>
+                <tr>
+                    <td>Calligraphy</td>
+                    <td>Priyanka</td>
+                    <td>10:00 am</td>
+                </tr>
+                <tr>
+                    <td>Painting</td>
+                    <td>David</td>
+                    <td>10:00 am</td>
+                </tr>
+                <tr>
+                    <td>Origami</td>
+                    <td>Priyanka</td>
+                    <td>11:00 am</td>
+                </tr>
+                <tr>
+                    <td>Quilling</td>
+                    <td>Anjali</td>
+                    <td>8:00 am</td>
+                </tr>
+            </table>
+            <dd> <p align ="justify">Cooking</p></dd>
+            <table border= "1" cellpadding="15" cellspacing="5" align="center">
+                <tr>
+                    <th>Activity_Name</th>
+                    <th>Activity Coach</th>
+                    <th>Activity Time</th>
+                </tr>
+                <tr>
+                    <td>Chocolate Making</td>
+                    <td>Jane</td>
+                    <td>9:30 am</td>
+                </tr>
+                <tr>
+                    <td>Soups & Salads</td>
+                    <td>Richa</td>
+                    <td>10:30 am</td>
+                </tr>
+                <tr>
+                    <td>Baking</td>
+                    <td>Rosy</td>
+                    <td>5:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Deaerts</td>
+                    <td>Bina</td>
+                    <td>6:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Snacks</td>
+                    <td>Anjali</td>
+                    <td>8:00 am</td>
+                </tr>
+            </table>
+            <hr>
+        </font>
+        <hr>
+        <h3 id="activity 2">C. Add background color, border color and caption to the table as given in the following code snippt:</h3>
+        <h3>For Art and Craft: table border="1" bgcolor="#ecddd" bordercolor= "green" cellpading= "15" cellspacing= "5" aling= "center"></h3>
+        <h3>For Cooking: table border="1" bgcolor="#fffef0" bordercolor= "red" cellpading= "15" cellspacing= "5" aling= "center"></h3>
+        <hr>
+        <font face="Lucida Calligraphy" size ="4" color ="#008080">
+            <dt>Activity Studio</dt>
+            <dd><p align="justify">Art and Craft</p></dd>
+            <table border="1" bgcolor= "#ecddd" bordercolor= "green" cellpading= "15" cellspacing= "5" align= "center">
+            <caption><b>Activity Detail</b></caption>    
+                <tr>
+                    <th>Activity_Name</th>
+                    <th>Activity Coach</th>
+                    <th>Activity Time</th>
+                </tr>
+                <tr>
+                    <td>Drawing</td>
+                    <td>David</td>
+                    <td>9:00 am</td>
+                </tr>
+                <tr>
+                    <td>Calligraphy</td>
+                    <td>Priyanka</td>
+                    <td>10:00 am</td>
+                </tr>
+                <tr>
+                    <td>Painting</td>
+                    <td>David</td>
+                    <td>10:00 am</td>
+                </tr>
+                <tr>
+                    <td>Origami</td>
+                    <td>Priyanka</td>
+                    <td>11:00 am</td>
+                </tr>
+                <tr>
+                    <td>Quilling</td>
+                    <td>Anjali</td>
+                    <td>8:00 am</td>
+                </tr>
+            </table>
+            <dd> <p align ="justify">Cooking</p></dd>
+            <table border="1" bgcolor="#fffef0" bordercolor= "red" cellpading= "15" cellspacing= "5" align= "center">
+            <caption><b>Activity Details</b></caption>
+                <tr>
+                    <th>Activity_Name</th>
+                    <th>Activity Coach</th>
+                    <th>Activity Time</th>
+                </tr>
+                <tr>
+                    <td>Chocolate Making</td>
+                    <td>Jane</td>
+                    <td>9:30 am</td>
+                </tr>
+                <tr>
+                    <td>Soups & Salads</td>
+                    <td>Richa</td>
+                    <td>10:30 am</td>
+                </tr>
+                <tr>
+                    <td>Baking</td>
+                    <td>Rosy</td>
+                    <td>5:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Deaerts</td>
+                    <td>Bina</td>
+                    <td>6:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Snacks</td>
+                    <td>Anjali</td>
+                    <td>8:00 am</td>
+                </tr>
+            </table>
+            <hr>
+        </font>
+        <div class="ex1" id="c2">
+            <h4 style="font-family: monospace; background-color: rgba(223, 223, 223, 0.055)">Vedant Workspace is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.</h4>
+            <h4 style="font-family: monospace; background-color: rgba(223, 223, 223, 0.055)">All Rights Reserved.</h4>
+            <img src="images/workspace-ConvertImage.png" alt="vedant workshop" style="width:100px; height:100px;" class="center"></img>
+        </div>
+    </body>
+</html>
+    
